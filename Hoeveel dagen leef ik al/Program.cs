@@ -6,7 +6,9 @@ namespace Hoeveel_dagen_leef_ik_al
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DateTime verjaardag = new DateTime(2001, 9, 11, 12, 0, 5);
+            TimeSpan ts = DateTime.Now - verjaardag;
+            Console.WriteLine(ts + " dagen !");
         }
     }
 }
